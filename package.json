@@ -9,9 +9,7 @@
     "build": "webpack --config webpack.prod.js --progress --colors",
     "server": "node ./server/index.js"
   },
-  "author": "steven chung",
   "license": "MIT",
-  "homepage": "https://github.com/stevenchung213/rhl-boilerplate#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

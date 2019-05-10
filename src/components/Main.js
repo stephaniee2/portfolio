@@ -1,11 +1,19 @@
 import React, {Component} from 'react';
-import { hot } from 'react-hot-loader/root'
+import { hot } from 'react-hot-loader/root';
+import Home from './Home';
+import Projects from './Projects';
+import Tech from './Tech';
+import About from './About';
+
 
 class Main extends Component {
   render() {
     return (
       <div>
-        Hello world!
+        <Home />
+        <Projects />
+        <Tech />
+        <About />
       </div>
     );
   }
