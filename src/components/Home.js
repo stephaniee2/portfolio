@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Header'
 
 const Home = () => {
   return(
-  <div>
-    <Header />
+  <div id='home-banner'>
+  <div id='banner-text'>
     <h1>Stephanie Louie</h1>
     <h3>UI developer</h3>
+    </div>
   </div>
   )
 };

@@ -1,0 +1,79 @@
+/* OVERALL LAYOUT */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+/* HEADER */
+#header {
+  background-color: aquamarine;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#header h4 {
+  margin-right: 1.5rem;
+}
+
+/* HOME BANNER */
+#home-banner {
+  background-color: teal;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-text {
+  text-align: center;
+}
+
+/* PROJECTS SECTION*/
+#projects-container {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.proj-imgs-container {
+  /* background-color: violet; */
+  max-width: 90vw;
+  max-height: 90vw;
+  object-fit: contain;
+  /* display: flex; */
+}
+
+/* ABOUT SECTION */
+
+/* TECH STACK */
+#tech-container {
+  background-color: slategray;
+  padding: 3rem 0;
+}
+#tech-container-inner {
+  text-align: center;
+  margin: 0 6rem;
+}
+#tech-container-inner h2 {
+  display: block;
+  margin-bottom: 3rem;
+}
+.tech-imgs-container {
+  display: block;
+  flex-wrap: wrap;
+}
+.tech-icon {
+  display: inline;
+}
+.tech-icon img {
+  max-width: 100px;
+  filter: grayscale(80%);
+  margin: 1rem 1.2rem;
+}
+
+/* FOOTER */
+#footer-container{
+  height: 4rem;
+}

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 const Header = () => {
   return(
-  <div>
+  <div id='header'>
     <h4>Projects</h4>
     <h4>Tech</h4>
     <h4>About/Contact</h4>

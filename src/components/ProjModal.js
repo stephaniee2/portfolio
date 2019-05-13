@@ -1,24 +1,33 @@
+import React, { Component } from "react";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import ProjectData from "./ProjectData";
+
 class MyVerticallyCenteredModal extends React.Component {
   render() {
+    console.log(this.props);
+    const { selectedProj } = this.props;
     return (
       <Modal
         {...this.props}
-        size="lg"
+        dialogClassName="modal-90w"
+        // size="lg"
         aria-labelledby="contained-modal-title-vcenter"
-        centered
+        // centered
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            <h4>{selectedProj.name}</h4>
+            {/* Modal heading */}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
+          <p>{selectedProj.description}</p>
+          <div className="proj-imgs-container">
+            {selectedProj.screenshots.map(img => {
+              return <img src={img} />;
+            })}
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={this.props.onHide}>Close</Button>
@@ -28,32 +37,4 @@ class MyVerticallyCenteredModal extends React.Component {
   }
 }
 
-class App extends React.Component {
-  constructor(...args) {
-    super(...args);
-
-    this.state = { modalShow: false };
-  }
-
-  render() {
-    let modalClose = () => this.setState({ modalShow: false });
-
-    return (
-      <ButtonToolbar>
-        <Button
-          variant="primary"
-          onClick={() => this.setState({ modalShow: true })}
-        >
-          Launch vertically centered modal
-        </Button>
-
-        <MyVerticallyCenteredModal
-          show={this.state.modalShow}
-          onHide={modalClose}
-        />
-      </ButtonToolbar>
-    );
-  }
-}
-
-render(<App />);
+export default MyVerticallyCenteredModal;
