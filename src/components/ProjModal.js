@@ -25,7 +25,9 @@ class MyVerticallyCenteredModal extends React.Component {
           <p>{selectedProj.description}</p>
           <div className="proj-imgs-container">
             {selectedProj.screenshots.map(img => {
-              return <img src={img} />;
+              return <div className="screenshot-container">
+                <img className="proj-screenshot" src={img} />
+                </div>;
             })}
           </div>
         </Modal.Body>

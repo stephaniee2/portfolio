@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader/root";
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home from "./Home";
 import Projects from "./Projects";
 import Tech from "./Tech";
@@ -13,7 +14,9 @@ class Main extends Component {
       <div>
         <Header />
         <Home />
+        {/* <section id='projects'> */}
         <Projects />
+        {/* </section> */}
         <About />
         <Tech />
         <Footer/>

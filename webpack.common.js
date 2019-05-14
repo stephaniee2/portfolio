@@ -1,95 +1,94 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: [
-      'react-hot-loader/patch',
-      './src/index.js'
-    ]
+    app: ["react-hot-loader/patch", "./src/index.js"]
   },
   output: {
-    filename: '[name].bundle.js',
-    path: __dirname + '/dist',
-    publicPath: '/',
+    filename: "[name].bundle.js",
+    path: __dirname + "/dist",
+    publicPath: "/"
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          cacheDirectory: true,
-        },
+          cacheDirectory: true
+        }
       },
       {
         test: /\.css$/,
-        loader: ['style-loader', 'css-loader']
+        loader: ["style-loader", "css-loader"]
       },
       {
         test: /\.scss|\.sass$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader'],
+        loader: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: "url-loader",
         query: {
           limit: 10000,
-          name: 'images/[name].[ext]'
+          name: "images/[name].[ext]"
         }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: "url-loader",
         options: {
           limit: 1000,
-          name: 'fonts/[name].[ext]'
+          name: "fonts/[name].[ext]"
         }
       },
       {
         test: /\.(webm|mp4)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: 'videos/[name].[ext]'
+          name: "videos/[name].[ext]"
         }
-      },
-    ],
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: require('html-webpack-template'),
+      filename: "index.html",
+      template: require("html-webpack-template"),
       inject: false,
       mobile: true,
       cache: false,
       minify: true,
       // your app title below
-      title: '',
+      title: "",
       meta: [
         {
-          charset: 'UTF-8'
+          charset: "UTF-8"
         },
         {
-          name: 'author',
+          name: "author",
           // your name below
-          content: ''
+          content: ""
         },
         {
-          name: 'description',
+          name: "description",
           // your app description below
-          content: ''
+          content: ""
         }
       ],
       links: [
         // all CDN links here as strings
+        'https://use.fontawesome.com/releases/v5.8.2/css/all.css',
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       ],
-      appMountId: 'root',
+      appMountId: "root",
       bodyHtmlSnippet: `<noscript>Please enable JavaScript...</noscript>`,
       scripts: [
         // all other script tags here
-          // note: webpack will automatically insert all necessary
-          //       script tags for all files produced from build
+        // note: webpack will automatically insert all necessary
+        //       script tags for all files produced from build
       ]
     })
-  ],
+  ]
 };

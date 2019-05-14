@@ -5,7 +5,7 @@ let ProjectData = [
     description: "this is a test description",
     link: "",
     previewImg:
-      "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/elena-cordery-114707.jpg",
+      "https://beta.ethiq.com/9e548827ae4719f1d1e3aebc4d16b8e4.png",
     screenshots: [
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/ethiq/after-chart-backtest.png",
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/ethiq/after-chart-realtime.png",

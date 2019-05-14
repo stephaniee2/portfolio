@@ -4,6 +4,7 @@ import ProjectData from "./ProjectData";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";
 import MyVerticallyCenteredModal from "./ProjModal";
+//
 
 class Projects extends Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class Projects extends Component {
   }
 
   render() {
-    let modalClose = () => this.setState({ modalShow: false, projectSelected: null });
+    let modalClose = () =>
+      this.setState({ modalShow: false, projectSelected: null });
 
     return (
       <div id="projects-container">
@@ -31,7 +33,13 @@ class Projects extends Component {
                     this.setState({ projectSelected: proj });
                   }}
                 >
-                  open project
+                <div className="preview-img-container">
+                  <img
+                  className="preview-img"
+                    src={proj.previewImg}
+                    alt="Ethic logo"
+                  />
+                  </div>
                 </Button>
 
                 {this.state.projectSelected && (
