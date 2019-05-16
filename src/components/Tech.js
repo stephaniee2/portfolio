@@ -22,14 +22,14 @@ const Tech = props => {
     "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/npm.png",
     "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/webpack.png",
     "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/babel.png",
-    "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/linux.png",
     "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/mac.png",
+    "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/tech-stack-icons/linux.png",
   ];
 
   return (
     <div id="tech-container">
     <div id="tech-container-inner">
-      <h2>Familiar Technologies</h2>
+      <h2>FAMILIAR TECHNOLOGIES</h2>
       <div id="tech-imgs-container">
         {TechData.map(tech => {
           return (

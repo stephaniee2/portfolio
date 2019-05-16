@@ -80,7 +80,8 @@ module.exports = {
       links: [
         // all CDN links here as strings
         'https://use.fontawesome.com/releases/v5.8.2/css/all.css',
-        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        "https://fonts.googleapis.com/css?family=Montserrat:200,400,600"
       ],
       appMountId: "root",
       bodyHtmlSnippet: `<noscript>Please enable JavaScript...</noscript>`,
