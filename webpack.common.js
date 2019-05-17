@@ -61,7 +61,7 @@ module.exports = {
       cache: false,
       minify: true,
       // your app title below
-      title: "",
+      title: "Stephanie's website",
       meta: [
         {
           charset: "UTF-8"
@@ -69,12 +69,12 @@ module.exports = {
         {
           name: "author",
           // your name below
-          content: ""
+          content: "stephanie"
         },
         {
           name: "description",
           // your app description below
-          content: ""
+          content: "my website"
         }
       ],
       links: [

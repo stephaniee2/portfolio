@@ -38,9 +38,6 @@ class Projects extends Component {
           {ProjectData.map((proj, i) => {
             return (
               <div>
-                <ReactRevealText show={this.state.show}>
-                  {proj.name}
-                </ReactRevealText>
                 <ButtonToolbar
                   onMouseEnter={this.onMouseEnter}
                   onMouseLeave={this.onMouseLeave}
@@ -69,6 +66,15 @@ class Projects extends Component {
                     />
                   )}
                 </ButtonToolbar>
+
+                <ReactRevealText
+                  show={this.state.show}
+                  onMouseEnter={() => {
+                    this.setState({ projectSelected: proj });
+                  }}
+                >
+                  {proj.name}
+                </ReactRevealText>
               </div>
             );
           })}
