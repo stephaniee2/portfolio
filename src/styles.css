@@ -19,7 +19,7 @@ h2 {
 
 #header h4 {
   margin: 1.4rem 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* color: whitesmoke; */
 }
 #header a {
@@ -109,7 +109,21 @@ h2 {
 }
 .preview-img {
   max-width: 300px;
+  filter: grayscale(100%);
 }
+.preview-img:hover {
+  filter: grayscale(0%);
+
+}
+.proj-name{
+  font-weight: bold;
+  margin: 0;
+}
+.proj-type{
+  font-size: .8rem;
+}
+
+/* MODAL */
 .proj-video {
   pointer-events: none;
 }

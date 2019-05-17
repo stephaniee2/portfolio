@@ -12,19 +12,23 @@ class Projects extends Component {
     this.state = {
       modalShow: false,
       projectSelected: null,
-      show: false
-    };
+      show0: false,
+      show1: false,
+      show2: false,
+      show3: false,
+      show4: false
+};
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
   }
 
-  onMouseEnter() {
+  onMouseEnter(proj) {
     console.log("true");
-    this.setState({ show: true });
+    this.setState({ [proj]: true });
   }
-  onMouseLeave() {
+  onMouseLeave(proj) {
     console.log("false");
-    this.setState({ show: false });
+    this.setState({ [proj]: false });
   }
 
   render() {
@@ -36,11 +40,14 @@ class Projects extends Component {
         <h2>PROJECTS</h2>
         <div id="projects-only-container">
           {ProjectData.map((proj, i) => {
+            let key = 'show'+i;
+            console.log(key)
             return (
               <div>
+                {/* {this.state} */}
                 <ButtonToolbar
-                  onMouseEnter={this.onMouseEnter}
-                  onMouseLeave={this.onMouseLeave}
+                  onMouseEnter={()=>{this.onMouseEnter(key)}}
+                  onMouseLeave={()=>{this.onMouseLeave(key)}}
                 >
                   <Button
                     variant="primary"
@@ -57,7 +64,7 @@ class Projects extends Component {
                       />
                     </div>
                   </Button>
-
+                  {/* {console.log(this.state.projectSelected)} */}
                   {this.state.projectSelected && (
                     <MyVerticallyCenteredModal
                       show={this.state.modalShow}
@@ -67,14 +74,18 @@ class Projects extends Component {
                   )}
                 </ButtonToolbar>
 
-                <ReactRevealText
-                  show={this.state.show}
-                  onMouseEnter={() => {
-                    this.setState({ projectSelected: proj });
-                  }}
-                >
-                  {proj.name}
-                </ReactRevealText>
+                <p className="proj-name">
+                  <ReactRevealText
+                    show={this.state[key]}
+                  >
+                    {proj.name}
+                  </ReactRevealText>
+                </p>
+                <p className="proj-type">
+                  <ReactRevealText show={this.state[key]}>
+                    {proj.type}
+                  </ReactRevealText>
+                </p>
               </div>
             );
           })}

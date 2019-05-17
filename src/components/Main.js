@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Tech from "./Tech";
 import About from "./About";
 import Header from "./Header";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 class Main extends Component {
   render() {
@@ -14,12 +14,10 @@ class Main extends Component {
       <div>
         <Header />
         <Home />
-        {/* <section id='projects'> */}
         <Projects />
-        {/* </section> */}
         <About />
         <Tech />
-        <Footer/>
+        <Footer />
       </div>
     );
   }

@@ -7,10 +7,10 @@ const About = () => {
         <h2>ABOUT</h2>
         <div id="about-text">
           <p>
-            I am a front end developer with focus in modern Javascript,
+            Hi I am a front end developer with focus in modern Javascript,
             React.js, HTML/CSS, Node.js, and UI/UX to create engaging, reliable
             applications. I integrate my background in art and design to build
-            polished applications that are both aesthetically pleasing and functional with the latest industry technologies.
+            polished applications that are both aesthetic and functional with the latest industry technologies.
           </p>
         </div>
       </div>
