@@ -75,7 +75,7 @@ h2 {
   height: 100vh;
 }
 #projects-container h2 {
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 #projects-only-container {
   display: flex;
@@ -102,11 +102,11 @@ h2 {
 .btn-primary {
   padding: 0;
   border-radius: 0;
-  background-color: none;
   border-color: white;
+  background-color: darkgrey;
 }
 .btn-primary:hover {
-  background-color: none;
+  background-color: grey;
   border-color: white;
 }
 .btn-toolbar{
@@ -120,10 +120,11 @@ h2 {
   filter: grayscale(100%);
   height: 169px;
   width: 300px;
+  -webkit-transition: filter .7s;
 }
 .preview-img:hover {
   filter: grayscale(0%);
-  transition: 0.4s ease-in;
+  -webkit-transition: filter 0.7s;
 }
 .proj-name{
   font-weight: bold;
@@ -131,6 +132,17 @@ h2 {
 }
 .proj-type{
   font-size: .8rem;
+}
+#down-arrow-projects i {
+  font-size: 4rem;
+  color: grey;
+  opacity: 0.5;
+  margin-top: 2rem;
+}
+#down-arrow-projects i:hover {
+  color: black;
+  opacity: 1;
+  transition: 0.3s ease-in;
 }
 
 /* MODAL */

@@ -7,7 +7,7 @@ class MyVerticallyCenteredModal extends React.Component {
   render() {
     console.log(this.props);
     const { selectedProj } = this.props;
-    if (selectedProj.video || selectedProj.github) {
+    if (selectedProj.video && selectedProj.github) {
       return (
         <Modal
           {...this.props}
@@ -65,7 +65,7 @@ class MyVerticallyCenteredModal extends React.Component {
           </Modal.Footer>
         </Modal>
       );
-    } else if (!selectedProj.video && !selectedProj.github) {
+    } else if ((!selectedProj.video) && (!selectedProj.github)) {
       return (
         <Modal
         {...this.props}

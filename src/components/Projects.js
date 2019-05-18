@@ -5,6 +5,7 @@ import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";
 import MyVerticallyCenteredModal from "./ProjModal";
 import ReactRevealText from "react-reveal-text/lib/ReactRevealText";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 class Projects extends Component {
   constructor(props) {
@@ -87,6 +88,11 @@ class Projects extends Component {
               </div>
             );
           })}
+        </div>
+        <div id="down-arrow-projects">
+          <AnchorLink href="#about-container">
+            <i class="fas fa-caret-down" />
+          </AnchorLink>
         </div>
       </div>
     );
