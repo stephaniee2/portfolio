@@ -17,21 +17,17 @@ class Projects extends Component {
       show2: false,
       show3: false,
       show4: false
-};
-    this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
+    };
   }
 
-  onMouseEnter(proj) {
-    console.log("true");
+  onMouseEnter = proj => {
     this.setState({ [proj]: true });
-  }
-  onMouseLeave(proj) {
-    console.log("false");
+  };
+  onMouseLeave = proj => {
     this.setState({ [proj]: false });
-  }
+  };
 
-  render() {
+  render = () => {
     let modalClose = () =>
       this.setState({ modalShow: false, projectSelected: null });
 
@@ -40,14 +36,18 @@ class Projects extends Component {
         <h2>PROJECTS</h2>
         <div id="projects-only-container">
           {ProjectData.map((proj, i) => {
-            let key = 'show'+i;
-            console.log(key)
+            let key = "show" + i;
+            // console.log(key)
             return (
-              <div>
+              <div className="individual-proj">
                 {/* {this.state} */}
                 <ButtonToolbar
-                  onMouseEnter={()=>{this.onMouseEnter(key)}}
-                  onMouseLeave={()=>{this.onMouseLeave(key)}}
+                  onMouseEnter={() => {
+                    this.onMouseEnter(key);
+                  }}
+                  onMouseLeave={() => {
+                    this.onMouseLeave(key);
+                  }}
                 >
                   <Button
                     variant="primary"
@@ -75,9 +75,7 @@ class Projects extends Component {
                 </ButtonToolbar>
 
                 <p className="proj-name">
-                  <ReactRevealText
-                    show={this.state[key]}
-                  >
+                  <ReactRevealText show={this.state[key]}>
                     {proj.name}
                   </ReactRevealText>
                 </p>
@@ -92,7 +90,7 @@ class Projects extends Component {
         </div>
       </div>
     );
-  }
+  };
 }
 
 export default Projects;

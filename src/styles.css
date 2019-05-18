@@ -26,6 +26,11 @@ h2 {
   color: dimgrey;
   opacity: 0.8;
 }
+#header a:hover{
+  text-decoration: none;
+  color: black;
+  transition: .2s ease-in
+}
 
 /* HOME BANNER */
 #home-banner {
@@ -67,6 +72,7 @@ h2 {
   text-align: center;
   background-color: whitesmoke;
   padding-top: 10rem;
+  height: 100vh;
 }
 #projects-container h2 {
   padding-bottom: 4rem;
@@ -74,9 +80,9 @@ h2 {
 #projects-only-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 15.5rem;
   background-color: whitesmoke;
+  justify-content: center;
+  padding: 0 17rem;
 }
 .proj-imgs-container {
   /* background-color: violet; */
@@ -86,6 +92,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.individual-proj{
+  margin: 2rem;
 }
 .screenshot-container {
   display: inline;
@@ -108,12 +117,13 @@ h2 {
   margin: 2rem 2rem;
 }
 .preview-img {
-  max-width: 300px;
   filter: grayscale(100%);
+  height: 169px;
+  width: 300px;
 }
 .preview-img:hover {
   filter: grayscale(0%);
-
+  transition: 0.4s ease-in;
 }
 .proj-name{
   font-weight: bold;
@@ -124,6 +134,15 @@ h2 {
 }
 
 /* MODAL */
+.github-link{
+  margin: 0 1rem;
+}
+.live-link{
+  margin-left: 1rem;
+}
+.video-feature{
+  margin-top: 2rem;
+}
 .proj-video {
   pointer-events: none;
 }
@@ -199,17 +218,18 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+
 .tech-icon {
   display: inline;
 }
 .tech-icon img {
-  max-width: 100px;
-  filter: grayscale(100%);
+  max-width: 98px;
+  filter: grayscale(90%);
   margin: 1rem 1.2rem;
 }
 .tech-icon img:hover {
   filter: grayscale(0%);
-  transition: 0.1s ease-in;
+  transition: 0.2s ease-in;
 }
 
 /* FOOTER */
