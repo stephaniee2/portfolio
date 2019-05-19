@@ -19,7 +19,7 @@ const About = () => {
           </div>
         </Fade>
       </div>
-      <Fade bottom delay={200} duration={3500} bottom={false}>
+      <Fade bottom delay={300} duration={3500} bottom={false}>
         <div id="social-links">
           <a target="_blank" href="mailto:stephaniejlouie@gmail.com">
             <i class="fas fa-envelope" />

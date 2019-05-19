@@ -288,3 +288,9 @@ h2 {
 .fa-heart{
   color: red;
 }
+
+
+/* MOBILE SIZE */
+#projects-only-container-mobile{
+  padding: 0;
+}

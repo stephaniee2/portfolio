@@ -32,7 +32,7 @@ const Tech = props => {
   return (
     <div id="tech-container">
       <div id="tech-container-inner">
-      <Fade bottom delay={300} duration={3500} bottom={false}>
+      <Fade bottom delay={450} duration={3500} bottom={false}>
         <h2>FAMILIAR TECHNOLOGIES</h2>
         <div id="tech-imgs-container">
           {TechData.map(tech => {
