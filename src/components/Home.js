@@ -35,13 +35,13 @@ class Home extends React.Component {
               marginTop: "-.3rem"
             }}
           >
-            front end developer
+            UI developer
           </ReactRevealText>
         </div>
         <div id="down-arrow">
           <h4>
             <AnchorLink href="#projects-container">
-                <i class="fas fa-caret-down" />
+            <i class="fas fa-angle-down"></i>
             </AnchorLink>
           </h4>
         </div>

@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import MyVerticallyCenteredModal from "./ProjModal";
 import ReactRevealText from "react-reveal-text/lib/ReactRevealText";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Fade from "react-reveal/Fade";
 
 class Projects extends Component {
   constructor(props) {
@@ -34,64 +35,64 @@ class Projects extends Component {
 
     return (
       <div id="projects-container">
+        <Fade bottom delay={200} duration={3500} bottom={false}>
         <h2>PROJECTS</h2>
-        <div id="projects-only-container">
-          {ProjectData.map((proj, i) => {
-            let key = "show" + i;
-            // console.log(key)
-            return (
-              <div className="individual-proj">
-                {/* {this.state} */}
-                <ButtonToolbar
-                  onMouseEnter={() => {
-                    this.onMouseEnter(key);
-                  }}
-                  onMouseLeave={() => {
-                    this.onMouseLeave(key);
-                  }}
-                >
-                  <Button
-                    variant="primary"
-                    onClick={() => {
-                      this.setState({ modalShow: true });
-                      this.setState({ projectSelected: proj });
+          <div id="projects-only-container">
+            {ProjectData.map((proj, i) => {
+              let key = "show" + i;
+              return (
+                <div className="individual-proj">
+                  <ButtonToolbar
+                    onMouseEnter={() => {
+                      this.onMouseEnter(key);
+                    }}
+                    onMouseLeave={() => {
+                      this.onMouseLeave(key);
                     }}
                   >
-                    <div className="preview-img-container">
-                      <img
-                        className="preview-img"
-                        src={proj.previewImg}
-                        alt="Project preview"
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        this.setState({ modalShow: true });
+                        this.setState({ projectSelected: proj });
+                      }}
+                    >
+                      <div className="preview-img-container">
+                        <img
+                          className="preview-img"
+                          src={proj.previewImg}
+                          alt="Project preview"
+                        />
+                      </div>
+                    </Button>
+                    {this.state.projectSelected && (
+                      <MyVerticallyCenteredModal
+                        show={this.state.modalShow}
+                        onHide={modalClose}
+                        selectedProj={this.state.projectSelected}
                       />
-                    </div>
-                  </Button>
-                  {/* {console.log(this.state.projectSelected)} */}
-                  {this.state.projectSelected && (
-                    <MyVerticallyCenteredModal
-                      show={this.state.modalShow}
-                      onHide={modalClose}
-                      selectedProj={this.state.projectSelected}
-                    />
-                  )}
-                </ButtonToolbar>
+                    )}
+                  </ButtonToolbar>
 
-                <p className="proj-name">
-                  <ReactRevealText show={this.state[key]}>
-                    {proj.name}
-                  </ReactRevealText>
-                </p>
-                <p className="proj-type">
-                  <ReactRevealText show={this.state[key]}>
-                    {proj.type}
-                  </ReactRevealText>
-                </p>
-              </div>
-            );
-          })}
-        </div>
+                  <p className="proj-name">
+                    <ReactRevealText show={this.state[key]}>
+                      {proj.name}
+                    </ReactRevealText>
+                  </p>
+                  <p className="proj-type">
+                    <ReactRevealText show={this.state[key]}>
+                      {proj.type}
+                    </ReactRevealText>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </Fade>
+
         <div id="down-arrow-projects">
           <AnchorLink href="#about-container">
-            <i class="fas fa-caret-down" />
+            <i class="fas fa-angle-down" />
           </AnchorLink>
         </div>
       </div>

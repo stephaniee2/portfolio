@@ -48,7 +48,7 @@ class MyVerticallyCenteredModal extends React.Component {
                   </div>
                 );
               })}
-              <iframe
+              <video
                 className="video-feature"
                 width="950"
                 height="600"
