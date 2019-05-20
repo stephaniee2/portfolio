@@ -194,7 +194,7 @@ h2 {
   padding: 1.5rem 0px 1rem 3rem;
 }
 .modal-content {
-  /* position: absolute; */
+  position: absolute;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
