@@ -10,7 +10,7 @@
     "build": "webpack --config webpack.prod.js",
     "server": "node ./server/index.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d server"
   },
   "license": "MIT",
   "dependencies": {
