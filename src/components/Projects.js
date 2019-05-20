@@ -106,7 +106,7 @@ class Projects extends Component {
           <div id="projects-container">
             <Fade bottom delay={200} duration={3500} bottom={false}>
               <h2>PROJECTS</h2>
-              <div id="projects-only-container-mobile">
+              <div id="projects-only-container" style={{ padding: "0" }}>
                 {ProjectData.map((proj, i) => {
                   let key = "show" + i;
                   return (
@@ -114,17 +114,44 @@ class Projects extends Component {
                       className="individual-proj"
                       style={{ margin: "0 2rem" }}
                     >
-                      <div className="preview-img-container">
-                        <img
-                          className="preview-img"
-                          src={proj.previewImg}
-                          alt="Project preview"
-                        />
-                      </div>
+                      <ButtonToolbar
+                        onMouseEnter={() => {
+                          this.onMouseEnter(key);
+                        }}
+                        onMouseLeave={() => {
+                          this.onMouseLeave(key);
+                        }}
+                      >
+                        <Button
+                          variant="primary"
+                          onClick={() => {
+                            this.setState({ modalShow: true });
+                            this.setState({ projectSelected: proj });
+                          }}
+                        >
+                          <div className="preview-img-container">
+                            <img
+                              className="preview-img"
+                              src={proj.previewImg}
+                              alt="Project preview"
+                              style={{ height: "auto", width: "100vw" }}
+                            />
+                          </div>
+                        </Button>
+                        {this.state.projectSelected && (
+                          <MyVerticallyCenteredModal
+                            show={this.state.modalShow}
+                            onHide={modalClose}
+                            selectedProj={this.state.projectSelected}
+                          />
+                        )}
+                      </ButtonToolbar>
 
-                      <p className="proj-name" style={{ marginBottom: "3rem" }}>{proj.name}</p>
-                      {/* <p className="proj-type" style={{ marginBottom: "2rem" }}>
-                        {proj.type}
+                      <p className="proj-name" style={{ marginBottom: "3rem" }}>
+                        {proj.name}
+                      </p>
+                      {/* <p className="proj-type">
+                          {proj.type}
                       </p> */}
                     </div>
                   );
