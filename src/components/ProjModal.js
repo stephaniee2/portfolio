@@ -5,7 +5,6 @@ import ProjectData from "./ProjectData";
 
 class MyVerticallyCenteredModal extends React.Component {
   render() {
-    console.log(this.props);
     const { selectedProj } = this.props;
     if (selectedProj.video && selectedProj.github) {
       return (
