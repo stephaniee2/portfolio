@@ -226,6 +226,10 @@ h2 {
 .close {
   display: none;
 }
+.close-btn{
+  padding: .5rem 1rem;
+  border-radius: 7px;
+}
 
 /* ABOUT */
 #about-container {

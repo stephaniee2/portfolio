@@ -3,7 +3,7 @@ let ProjectData = [
     name: "Doctor Search",
     type: "front end",
     year: "2019",
-    description: "",
+    description: "project in progress",
     link: "",
     github: "",
     previewImg:
@@ -34,7 +34,7 @@ let ProjectData = [
     type: "SSR full stack",
     year: "2019",
     description:
-      "A to do app that alerts users via SMS messages when a new task is created through Twilio's API. Keeping the UI simple, our focus was placed on the app's functionality, backend integration, and server-side rendering. Technologies used: Javascript, ReactJS, HTML5, CSS, Node.js, Express.js, MongoDB, Heroku. (since our free Twilio trial has ended, users now have to be registered in our Twilio account to receive texts.)",
+      "A to do app that alerts users via SMS messages when a new task is created through Twilio's API. Keeping the UI simple, our focus was placed on the app's functionality, backend integration, and server-side rendering. Currently optimized for desktops. Technologies used: Javascript, ReactJS, HTML5, CSS, Node.js, Express.js, MongoDB, Heroku. (since our free Twilio trial has ended, users now have to be registered in our Twilio account to receive texts.)",
     link: "https://ssr-todo-app.herokuapp.com/",
     github: "https://github.com/chingu-voyages/geckos-project-10",
     previewImg:
