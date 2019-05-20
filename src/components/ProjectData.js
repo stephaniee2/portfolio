@@ -15,7 +15,7 @@ let ProjectData = [
     type: "front end",
     year: "2019",
     description:
-      "Ethiq is a website built for wealth managers to assist clients in making responsible investments by providing company analysis of its aggregate contributions to social and political issues. A team effort of several developers, I worked on the front end, upgrading the site's React-based style elements, such as dropdown menus, graph layouts, component positionings, and UI theme.",
+      "Ethiq is a website built for wealth managers to assist clients in making responsible investments by providing company analysis of its aggregate contributions to social and political issues. A team effort, I worked on the front end, re-designing and upgrading the React-based site's UI elements.",
     link: "https://beta.ethiq.com/",
     github: "https://github.com/stephaniee2/project-q",
     previewImg:
@@ -34,7 +34,7 @@ let ProjectData = [
     type: "SSR full stack",
     year: "2019",
     description:
-      "A to do app that alerts users via SMS messages when a new task is created through Twilio's API. Keeping the UI simple, our focus was placed on the app's functionality, backend integration, and server-side rendering. Currently optimized for desktops. Technologies used: Javascript, ReactJS, HTML5, CSS, Node.js, Express.js, MongoDB, Heroku. (since our free Twilio trial has ended, users now have to be registered in our Twilio account to receive texts.)",
+      "A to do app that alerts users via SMS messages when a new task is created through Twilio's API. Our focus was placed on the app's functionality, backend database integration, and server-side rendering. Currently optimized for desktops. Technologies used: Javascript, ReactJS, HTML5, CSS, Node.js, Express.js, MongoDB, Heroku. (since our free Twilio trial has ended, users now have to be registered in our Twilio account to receive texts.)",
     link: "https://ssr-todo-app.herokuapp.com/",
     github: "https://github.com/chingu-voyages/geckos-project-10",
     previewImg:
