@@ -6,7 +6,7 @@
   "homepage": "https://stephaniee2.github.io/portfolio/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.dev.js --progress --colors",
+    "start": "node ./server/index.js",
     "build": "webpack --config webpack.prod.js ",
     "server": "node ./server/index.js",
     "predeploy": "npm run build",
