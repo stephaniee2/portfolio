@@ -110,16 +110,16 @@ h2 {
   border-color: white;
 }
 .btn-toolbar {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 .proj-screenshot {
   max-width: 70rem;
-  margin: 2rem 2rem;
+  margin: 1rem 2rem;
 }
 .preview-img {
   /* filter: grayscale(100%); */
-  height: 169px;
-  width: 300px;
+  height: 200px;
+  width: 350px;
   /* -webkit-transition: filter .7s; */
 }
 /* .preview-img:hover {

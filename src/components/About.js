@@ -5,17 +5,35 @@ const About = () => {
   return (
     <div id="about-container">
       <div id="about-text-container">
-      <Fade bottom delay={200} duration={3500} bottom={false}>
-
-        <h2>ABOUT</h2>
+        <Fade bottom delay={200} duration={3500} bottom={false}>
+          <h2>ABOUT</h2>
           <div id="about-text">
-            <p>
-              Hi I am a UI/front end developer focusing on modern Javascript,
-              React.js, HTML/CSS, Node.js, and UI/UX to create polished yet
-              reliable applications using the latest industry technologies. My
-              background in art and design lends itself useful when it comes to
-              designing layouts, typography, and colors.
+            <p className="about-me">
+              Hi I am a UI/frontend developer who enjoys creating polished yet
+              reliable applications using the latest industry technologies. I
+              got my start in coding a few years ago when people began asking me
+              to design websites for them since I knew how to graphic design on
+              computers... Not quite the same thing but I gave it a try anyway,
+              beginning with HTML, CSS, and Javascript, and discovered how much really enjoyed it.
+              I've been on the coding train ever since and, despite it's challenges, am loving it. My background in the arts now lends
+              itself useful when it comes to understanding and designing UI
+              layouts, and translating them into functional code. 
+              <br />
+              I'm always open to sharing new ideas or meeting fellow developers and creatives, so please feel free to reach out. 
             </p>
+            {/* <div id="resources">
+              <p>
+                I am always learning, constantly striving to improve my skills.
+                Here are a few resources I like and hope you'll like them too.
+              </p>
+              <div id="links">
+                <div className="link">
+                  <a href="https://dev.to/" target="_blank">DEV - an online programming community for sharing and discovering great ideas </a>
+                  <a href="https://jstherightway.org/" target="_blank">JS the Right Way - guide intended to introduce new developers to JavaScript and help experienced developers learn more about its best practices </a>
+                
+                </div>
+              </div>
+            </div> */}
           </div>
         </Fade>
       </div>

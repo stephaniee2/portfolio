@@ -1,25 +1,31 @@
 let ProjectData = [
   {
-    name: "Doctor Search",
+    name: "Doc Fusion",
     type: "front end",
     year: "2019",
-    description: "project in progress",
-    link: "",
+    description:
+      "Doc Fusion helps users search for and view details on medical professionals in their area. The web app integrates geographical location tracking, utilizes Better Doctor's API for its data, and is mobile responsive.",
+    link: "https://doc-fusion.herokuapp.com/",
     github: "",
     previewImg:
-      "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/coming-soon.jpg",
-    screenshots: [""]
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF-preview.png",
+    screenshots: [
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF1.png",
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF2.png",
+      
+    ]
+ 
   },
   {
     name: "Ethiq",
     type: "front end",
     year: "2019",
     description:
-      "Ethiq is a website built for wealth managers to assist clients in making responsible investments by providing company analysis of its aggregate contributions to social and political issues. A team effort, I worked on the front end, re-designing and upgrading the React-based site's UI elements.",
+      "Ethiq is a website built for wealth managers to assist clients in making responsible investments by providing company analysis of its aggregate contributions to social and political issues. Working on a team of developers, I worked on the front end, re-designing and upgrading the React-based site's UI elements.",
     link: "https://beta.ethiq.com/",
     github: "https://github.com/stephaniee2/project-q",
     previewImg:
-      "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/ethiq/preview.png",
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/ethiq/preview.png",
     screenshots: [
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/ethiq/after-login-pg.jpg",
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/ethiq/after-issues-select.jpg",
@@ -38,7 +44,7 @@ let ProjectData = [
     link: "https://ssr-todo-app.herokuapp.com/",
     github: "https://github.com/chingu-voyages/geckos-project-10",
     previewImg:
-      "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/todo-app/preview.png",
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/todo-app/todo-preview-front.png",
     screenshots: [""],
     video:
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/todo-app/todo-app-preview.mp4"
@@ -48,7 +54,7 @@ let ProjectData = [
     type: "Wordpress, front end",
     year: "2017-2019",
     description:
-      "A long-term project to re-design and develop the website of DJ company Grooveteknicians through the Wordpress platform. A large part invovled coming up with UX strategies and HTML/CSS for customization.",
+      "A long-term project to re-design and develop the website of DJ company Grooveteknicians through the Wordpress platform.",
     link: "http://www.grooveteknicians.com/",
     previewImg:
       "https://s3-us-west-1.amazonaws.com/sjl-portfolio-images/grooveteknicians/GT-cover-small.jpg",

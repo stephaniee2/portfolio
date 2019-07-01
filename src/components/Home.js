@@ -13,6 +13,7 @@ class Home extends React.Component {
       this.setState({ show: true });
     }, 500);
   }
+
   render() {
     return (
       <div id="home-banner">

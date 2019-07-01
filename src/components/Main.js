@@ -7,8 +7,10 @@ import About from "./About";
 import Header from "./Header";
 import Footer from "./Footer";
 import MediaQuery from "react-responsive";
+import ConfettiGenerator from "confetti-js";
 
 class Main extends Component {
+
   render() {
     return (
       <div>
