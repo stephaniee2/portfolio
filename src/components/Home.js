@@ -36,7 +36,7 @@ class Home extends React.Component {
               marginTop: "-.3rem"
             }}
           >
-            UI developer
+            Software developer
           </ReactRevealText>
         </div>
         <div id="down-arrow">

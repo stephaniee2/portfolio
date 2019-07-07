@@ -72,7 +72,7 @@ h2 {
   text-align: center;
   background-color: whitesmoke;
   padding-top: 10rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 #projects-container h2 {
   padding-bottom: 1.5rem;
@@ -82,12 +82,10 @@ h2 {
   flex-wrap: wrap;
   background-color: whitesmoke;
   justify-content: center;
-  padding: 0 17rem;
+  padding: 0 100px;
 }
 .proj-imgs-container {
-  /* background-color: violet; */
-  /* width: 90vw;
-  height: 90vw; */
+
   object-fit: contain;
   display: flex;
   flex-wrap: wrap;

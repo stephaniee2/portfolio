@@ -36,7 +36,7 @@ class Projects extends Component {
 
     return (
       <div>
-        <MediaQuery query="(min-device-width: 1824px)">
+        <MediaQuery query="(min-device-width: 1200px)">
           <div id="projects-container">
             <Fade bottom delay={200} duration={3500} bottom={false}>
               <h2>PROJECTS</h2>
