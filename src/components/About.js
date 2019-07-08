@@ -9,17 +9,21 @@ const About = () => {
           <h2>ABOUT</h2>
           <div id="about-text">
             <p className="about-me">
-              Hi and welcome. I am a software developer who like creating
-              polished and reliable applications using the latest industry
-              technologies. I got my start in coding a few years ago when people
-              began asking me to design websites for them since I knew how to
-              graphic design on computers... Not quite the same thing but I gave
-              it a try anyway, beginning with HTML, CSS, and Javascript, and
-              found it fascinating. The more I coded the more I liked it, and
-              eventually pursued it professionally. That was years ago and I've
-              been on the coding train ever since, diving into the world of
-              programming and software development, and enjoying the challenges
-              and intellectual rewards that come with it. 
+              Hi and welcome. I'm a software developer who enjoys creating
+              polished applications using the latest and greatest industry
+              technologies. A versatile developer with interests in FrontEnd and
+              UI design, I am able to understand both the engineering and design
+              aspects of projects.
+              <br />
+              <br />
+              I got my start in programming a few years ago when people began
+              asking me to design websites for them since I knew how to graphic
+              design on software as well as create digital wireframes, mockups,
+              and prototypes ... It wasn't exactly coding but I gave it a try
+              anyway, beginning with HTML, CSS, and Javascript. I found it
+              fascinating and the more I coded the more I liked it. I eventually
+              pursued it professionally, enjoying the challenges and
+              intellectual rewards that come with it.
               <br />
               <br />
               I'm always open to sharing new ideas, new resources, and meeting

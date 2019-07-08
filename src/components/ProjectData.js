@@ -11,10 +11,8 @@ let ProjectData = [
       "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF-preview.png",
     screenshots: [
       "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF1.png",
-      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF2.png",
-      
+      "https://sjl-portfolio-images.s3-us-west-1.amazonaws.com/doc-dashboard/DF2.png"
     ]
- 
   },
   {
     name: "Ethiq",
