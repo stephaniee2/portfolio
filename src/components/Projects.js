@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ProjModal from "./ProjModal";
 import ProjectData from "./ProjectData";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";

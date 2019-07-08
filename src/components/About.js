@@ -15,8 +15,11 @@ const About = () => {
               to design websites for them since I knew how to graphic design on
               computers... Not quite the same thing but I gave it a try anyway,
               beginning with HTML, CSS, and Javascript, and found it
-              fascinating. I've been on the coding train ever since, embracing
-              both the challenges and reward results that come with it.
+              fascinating. The more I coded the more I liked it,
+              and pursued it professionally. That was years ago and I've been on
+              the coding train ever since, diving into the world of programming
+              and software development, and enjoying the challenges and
+              intellectual rewards that come with it.
               <br />
               <br />
               I'm always open to sharing new ideas, new resources, and meeting
