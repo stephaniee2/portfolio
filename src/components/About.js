@@ -9,17 +9,17 @@ const About = () => {
           <h2>ABOUT</h2>
           <div id="about-text">
             <p className="about-me">
-              Hi I am a software developer who enjoys creating polished yet
-              reliable applications using the latest industry technologies. I
-              got my start in coding a few years ago when people began asking me
-              to design websites for them since I knew how to graphic design on
-              computers... Not quite the same thing but I gave it a try anyway,
-              beginning with HTML, CSS, and Javascript, and found it
-              fascinating. The more I coded the more I liked it,
-              and pursued it professionally. That was years ago and I've been on
-              the coding train ever since, diving into the world of programming
-              and software development, and enjoying the challenges and
-              intellectual rewards that come with it.
+              Hi and welcome. I am a software developer who like creating
+              polished and reliable applications using the latest industry
+              technologies. I got my start in coding a few years ago when people
+              began asking me to design websites for them since I knew how to
+              graphic design on computers... Not quite the same thing but I gave
+              it a try anyway, beginning with HTML, CSS, and Javascript, and
+              found it fascinating. The more I coded the more I liked it, and
+              eventually pursued it professionally. That was years ago and I've
+              been on the coding train ever since, diving into the world of
+              programming and software development, and enjoying the challenges
+              and intellectual rewards that come with it. 
               <br />
               <br />
               I'm always open to sharing new ideas, new resources, and meeting
