@@ -9,17 +9,18 @@ const About = () => {
           <h2>ABOUT</h2>
           <div id="about-text">
             <p className="about-me">
-              Hi I am a UI/frontend developer who enjoys creating polished yet
+              Hi I am a software developer who enjoys creating polished yet
               reliable applications using the latest industry technologies. I
               got my start in coding a few years ago when people began asking me
               to design websites for them since I knew how to graphic design on
               computers... Not quite the same thing but I gave it a try anyway,
-              beginning with HTML, CSS, and Javascript, and discovered how much really enjoyed it.
-              I've been on the coding train ever since and, despite it's challenges, am loving it. My background in the arts now lends
-              itself useful when it comes to understanding and designing UI
-              layouts, and translating them into functional code. 
+              beginning with HTML, CSS, and Javascript, and found it
+              fascinating. I've been on the coding train ever since, embracing
+              both the challenges and reward results that come with it.
               <br />
-              I'm always open to sharing new ideas or meeting fellow developers and creatives, so please feel free to reach out. 
+              <br />
+              I'm always open to sharing new ideas, new resources, and meeting
+              fellow developers and creatives, so please feel free to reach out.
             </p>
             {/* <div id="resources">
               <p>
